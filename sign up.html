@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sign up.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+    <script src="sign up.js"></script>
+  </head>
+
+  <body>
+    <div class="logo"></div>
+    <form class="form" onsubmit="check(event)">
+      <h1>Create accout</h1>
+      <label for="name">Your name</label>
+      <input
+        type="text"
+        placeholder="First and last name"
+        id="username"
+        required
+      />
+      <label for="phone and email">Mobile number or email</label>
+      <input type="email" required id="email" />
+      <label for="password">Password</label>
+      <input
+        type="password"
+        id="password"
+        placeholder="At least 6 characters"
+        required
+      />
+      <div style="display: flex">
+        <img
+          src="iFont.png"
+          alt=""
+          height="13"
+          width="14"
+          style="margin-left: 10px"
+        />
+        <p
+          style="
+            text-rendering: optimizeLegibility;
+            font-size: 13px;
+            margin-top: -1px;
+            margin-left: 4px;
+          "
+        >
+          Password must be at least 6 characters
+        </p>
+      </div>
+      <label for="confirmPassword">Re-enter password</label>
+      <input type="password" id="confirmPassword" required />
+      <button type="submit">Continue</button>
+      <div
+        style="
+          margin-top: 1px;
+          font-size: 13px;
+          text-rendering: optimizeLegibility;
+          margin-left: 15px;
+        "
+      >
+        <p>By creating an account, you agree to Amazon's</p>
+      </div>
+      <div
+        style="
+          margin-top: -20px;
+          font-size: 13px;
+          text-rendering: optimizeLegibility;
+          margin-left: 15px;
+          display: flex;
+        "
+      >
+        <p style="color: #0066c0; cursor: pointer">Conditions of Use</p>
+        <p style="margin-left: 3px; margin-right: 3px">and</p>
+        <p style="color: #0066c0; cursor: pointer">Privacy Notice.</p>
+      </div>
+      <div class="box" style="margin-left: 13px">
+        <p
+          style="
+            font-weight: bold;
+            text-rendering: optimizeLegibility;
+            font-size: 14px;
+          "
+        >
+          Buying for work?
+        </p>
+        <p style="margin-top: -15px; color: #0066c0; cursor: pointer">
+          Create a free business account
+        </p>
+      </div>
+      <div style="display: flex; margin-left: 13px; font-size: 14px">
+        <p>Already have an account?</p>
+        <p style="margin-left: 5px; color: #0066c0">
+          <span><a href="sign in1.html">Sign in</a></span>
+        </p>
+      </div>
+    </form>
+    <div class="footer">
+      <div class="pages">
+        <a>Condition of Use</a>
+        <a>Privacy Notice</a>
+        <a>Help</a>
+      </div>
+      <div class="copyright">
+        © 1996-2023, Amazon.com, Inc. or its affiliates
+      </div>
+    </div>
+  </body>
+</html>

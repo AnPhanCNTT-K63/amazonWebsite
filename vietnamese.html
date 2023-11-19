@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Amazon</title>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="nav-logo border" style="cursor: pointer;">
+          <div class="logo"></div>
+        </div>
+        <div class="nav-address border">
+          <p class="add-first">Vận chuyển tới</p>
+          <div class="add-icon">
+            <i class="fa-solid fa-location-dot"></i>
+            <p class="add-second">Việt Nam</p>
+          </div>
+        </div>
+        <div class="nav-search">
+          <select class="search-select" style="cursor: pointer;">
+            <option value="" >Tất cả</option>
+            <option value="">Gaming accessories</option>
+            <option value="">Small gifts under $20</option>
+            <option value="">Deals in PCs</option>
+            <option value="">Toys under $25</option>
+            <option value="">Refresh your space</option>
+            <option value="">Beauty steals under $25</option>
+            <option value="">Shop deals in Fashion</option>
+            <option value="">Popular products in PC internationally</option>
+            <option value="">Top Sellers in Toys for you</option>
+            <option value="">Host gifts under $50</option>
+            <option value="">Personal Care under $25</option>
+            <option value="">Deals on shoes</option>
+            <option value="">More smiles, for less</option>
+            <option value="">Best Sellers in Kitchen & Dining</option>
+            <option value="">Deals Under $25</option>
+            <option value="">Upgrade your office furniture</option>
+            <option value="">Creating business solutions
+            </option>
+            <option value="">Score big deals on toys
+            </option>
+            <option value="">Player's paradise starts here
+            </option>
+            <option value="">Best Sellers in Beauty & Personal Care
+            </option>
+            <option value="">Top picks for Vietnam
+            </option>
+            <option value="">Laptops for every need
+            </option>
+            <option value="">Shop trackers and watches
+            </option>
+            <option value="">Warm & welcoming decor
+            </option>
+            <option value="">Deals on most-loved finds
+            </option>
+            <option value="">Best Sellers in Sports & Outdoors</option>
+          </select>
+          <input type="text" placeholder="Tìm kiếm trên amazon" class="search-input" />
+          <div class="search-icon">
+            <i class="fa-solid fa-magnifying-glass" style="cursor: pointer;"></i>
+          </div>
+        </div>
+        <div class="nav-country border">
+          <img src="1200px-Flag_of_the_United_States.svg.webp" height="13px">
+          <select name="" id="vietnamese" style="border: none;" onchange="changeLanguage(this.value)">
+            <option value="">VI </option>
+            
+          <option value="VI">EN</option>
+      
+          </select>
+        </div>
+        <a href="sign in1.html">
+        <div class="nav-singin border" style="color: white;">
+          <p><span style="cursor: pointer;">Hế lô, đăng nhập</span></p>
+          <p class="nav-second" style="cursor: pointer;">Danh sách tài khoản</p>
+        </div>
+      </a>
+        <div class="nav-return border">
+          <p><span style="cursor: pointer;">Trở về</span></p>
+          <p class="nav-second" style="cursor: pointer;">& mua hàng</p>
+        </div>
+        <div class="nav-cart border" style="cursor: pointer;">
+          <i class="fa-solid fa-cart-shopping"></i>
+          giỏ hàng
+        </div>
+      </div>
+      <div class="panel">
+        <div class="panel-all border">
+          <i class="fa-solid fa-bars"></i>
+          Tất cả
+        </div>
+        <div class="panel-ops">
+          <p class="border" >Deal nóng</p>
+          <p class="border">Đăng kí</p>
+          <p class="border">Dịch vụ</p>
+          <p class="border">Thẻ tặng</p>
+          <p class="border">Bán</p>
+        </div>
+      </div>
+    </header>
+    <!-- <div class="hero-section"></div> -->
+    <div class="slider">
+      <div class="list">
+          <div class="item">
+              <img src="i1.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="i2.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="i3.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="i4.jpg" alt="">
+          </div>
+          <div class="item">
+              <img src="i5.jpg" alt="">
+          </div>
+          <div class="item">
+            <img src="i6.jpg" alt="">
+        </div>
+        <div class="item">
+          <img src="i7.jpg" alt="">
+      </div>
+      </div>
+      <div class="buttons">
+          <button id="prev" style="color: black;"><i class="fa-sharp fa-solid fa-chevron-right fa-rotate-180 fa-2xl"></i></button>
+          <button id="next" style="color: black;"><i class="fa-sharp fa-solid fa-chevron-right fa-2xl"></i></button>
+      </div>      
+  </div>
+  <script src="/public/JS/javs.js"></script>
+    <div class="shop-selection">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2>Bộ dụng cụ chơi game</h2>
+          <div class="box-image" style="background-image: url(box\ 1-1.png);"></div>
+          <p style="cursor: pointer;">Hơn nữa</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Quà dưới 20 đô</h2>
+          <div class="box-image" style="background-image: url(box\ 1-2.jpg);"></div>
+          <p style="cursor: pointer;">Săn</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2>Máy tính</h2>
+          <div class="box-image" style="background-image: url(box\ 1-3.jpg);"></div>
+          <p style="cursor: pointer;">Săn</p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h2>Đồ chơi dưới 20 đô</h2>
+          <div class="box-image" style="background-image: url(box\ 1-4.jpg);"></div>
+          <p style="cursor: pointer;">Mua ngay</p>
+        </div>
+      </div>
+      <div class="box5 box">
+        <div class="box-content">
+          <h2>Trang trí lại nhà</h2>
+          <div class="box-image" style="background-image: url(box\ 2-1.png);"></div>
+          <p style="cursor: pointer;">Xem ngay</p>
+        </div>
+      </div>
+      <div class="box6 box">
+        <div class="box-content">
+          <h2>Đồ nội địa</h2>
+          <div class="box-image" style="background-image: url(box\ 2-2.jpg);"></div>
+          <p style="cursor: pointer;">Xem ngay</p>
+        </div>
+      </div>
+      <div class="box7 box">
+        <div class="box-content">
+          <h2>Đồ làm đẹp dưới 20 đô</h2>
+          <div class="box-image" style="background-image: url(box\ 2-3.jpg);"></div>
+          <p style="cursor: pointer;">Mua</p>
+        </div>
+      </div>
+      <div class="box8 box">
+        <div class="box-content">
+          <h2>Cửa hàng thời trang</h2>
+          <div class="box-image" style="background-image: url(box\ 2-4.png);"></div>
+          <p style="cursor: pointer;">Xem ngay</p>
+        </div>
+      </div>
+      <div class="box9 slide-Box">
+        <div class="box-content"> 
+          <h2>Các sản phẩm rẻ</h2>
+          <div class="box-image-slide" style="background-image: url(bar1.jpg); width: 200px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar2.jpg);cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar3.jpg);cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar4.jpg); width: 200px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar5.jpg); width: 280px;cursor: pointer;"></div>
+        </div>
+      </div>
+      <div class="box10  slide-Box">
+        <div class="box-content"> 
+          <h2>Hàng hot cho bạn</h2>
+          <div class="box-image-slide" style="background-image: url(bar2-1.jpg); "></div>
+          <div class="box-image-slide" style="background-image: url(bar2-2.jpg); width: 230px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar2-3.jpg); width: 180px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar2-4.jpg); width: 180px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar2-5.jpg); width: 200px;cursor: pointer; "></div>
+        </div>
+      </div>
+      <div class="box11 box">
+        <div class="box-content">
+          <h2>Quà dưới 20 đô</h2>
+          <div class="box-image" style="background-image: url(box\ 3-1.jpg);"></div>
+          <p style="cursor: pointer;">Mua</p>
+        </div>
+      </div>
+      <div class="box12 box">
+        <div class="box-content">
+          <h2>Đồ skincare</h2>
+          <div class="box-image" style="background-image: url(box\ 3-2.jpg);"></div>
+          <p style="cursor: pointer;">Xem thêm</p>
+        </div>
+      </div>
+      <div class="box13 box">
+        <div class="box-content">
+          <h2>Bán giày</h2>
+          <div class="box-image" style="background-image: url(box\ 3-3.jpg);"></div>
+          <p style="cursor: pointer;">xem nữa</p>
+        </div>
+      </div>
+      <div class="box14 box">
+        <div class="box-content">
+          <h2>Xua tan muộn phiền</h2>
+          <div class="box-image" style="background-image: url(box\ 3-4.jpg);"></div>
+          <p style="cursor: pointer;">Mua ngay</p>
+        </div>
+      </div>
+      <div class="box15  slide-Box">
+        <div class="box-content"> 
+          <h2>Top sản phẩm nội thất</h2>
+          <div class="box-image-slide" style="background-image: url(bar3-1.jpg); width: 180px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar3-2.jpg); width: 285px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar3-3.jpg); width: 340px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar3-4.jpg); width: 230px;cursor: pointer;"></div>
+        </div>
+      </div>
+      <div class="box16  slide-Box">
+        <div class="box-content"> 
+          <h2>Deal dưới 20 đô</h2>
+          <div class="box2-image-slide" style="background-image: url(bar4-1.jpg);cursor: pointer;"></div>
+          <div class="box2-image-slide" style="background-image: url(bar4-2.jpg); width: 345px;cursor: pointer;"></div>
+          <div class="box2-image-slide" style="background-image: url(bar4-3.jpg); width: 295px;cursor: pointer;"></div>
+          <div class="box2-image-slide" style="background-image: url(bar4-4.jpg); width: 210px;cursor: pointer;"></div>
+        </div>
+      </div>
+      <div class="box17 box">
+        <div class="box-content">
+          <h2>Nâng cấp công việc</h2>
+          <div class="box-image" style="background-image: url(box\ 4-1.jpg);cursor: pointer;"></div>
+          <p style="cursor: pointer;">Mua luôn</p>
+        </div>
+      </div>
+      <div class="box18 box">
+        <div class="box-content">
+          <h2>Tạo hứng thú</h2>
+          <div class="box-image" style="background-image: url(box\ 4-2.jpg);cursor: pointer;"></div>
+          <p style="cursor: pointer;">xem thêm sản phẩm</p>
+        </div>
+      </div>
+      <div class="box19 box">
+        <div class="box-content">
+          <h2>Dồ chơi</h2>
+          <div class="box-image" style="background-image: url(box\ 4-3.jpg);cursor: pointer;"></div>
+          <p style="cursor: pointer;">Mua luôn</p>
+        </div>
+      </div>
+      <div class="box20 box">
+        <div class="box-content">
+          <h2>Thiên đường game</h2>
+          <div class="box-image" style="background-image: url(box\ 4-4.jpg);cursor: pointer;"></div>
+          <p style="cursor: pointer;">Mua luôn</p>
+        </div>
+      </div>
+      <div class="box21  slide-Box">
+        <div class="box-content"> 
+          <h2>Mua sắm vui tươi</h2>
+          <div class="box-image-slide" style="background-image: url(bar5-1.jpg); width: 200px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar5-2.jpg); width: 170px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar5-3.jpg); width: 200px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar5-4.jpg); width: 180px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar5-5.jpg); width: 180px;cursor: pointer;"></div>
+        </div>
+        </div>
+      
+      <div class="box21  slide-Box">
+        <div class="box-content"> 
+          <h2>Hàng có sẵn tại Việt Nam</h2>
+          <div class="box-image-slide" style="background-image: url(bar6-1.jpg); width: 260px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar6-2.jpg); width: 350px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar6-3.jpg); width: 320px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar6-4.jpg); width: 140px;cursor: pointer;"></div>
+        </div>
+      </div>
+      <div class="box20 box">
+        <div class="box-content">
+          <h2>Mua laptop</h2>
+          <div class="box-image" style="background-image: url(box\ 5-1.jpg);cursor: pointer;"></div>
+          <p style="cursor: pointer;">Ở đây</p>
+        </div>
+      </div>
+      <div class="box20 box">
+        <div class="box-content">
+          <h2>Cửa hàng đồng hồ</h2>
+          <div class="box-image" style="background-image: url(box\ 5-2.jpg);cursor: pointer;"></div>
+          <p style="cursor: pointer;">Mua ngay</p>
+        </div>
+      </div>
+      <div class="box20 box">
+        <div class="box-content">
+          <h2>Cửa hàng đồ ấm</h2>
+          <div class="box-image" style="background-image: url(box\ 5-3.jpg);cursor: pointer;"></div>
+          <p style="cursor: pointer;">Tìm thêm</p>
+        </div>
+      </div>
+      <div class="box20 box">
+        <div class="box-content">
+          <h2>Dành cho cặp đô</h2>
+          <div class="box-image" style="background-image: url(box\ 5-4.jpg);"></div>
+          <p style="cursor: pointer;">Mua ngay</p>
+        </div>
+      </div>
+      <div class="box21  slide-Box">
+        <div class="box-content"> 
+          <h2>Bán chạy nhất co người vận động</h2>
+          <div class="box-image-slide" style="background-image: url(bar7-1.jpg); width: 225px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar7-2.jpg); width: 63px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar7-3.jpg); width: 150px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar7-4.jpg); width: 125px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar7-5.jpg); width: 200px;cursor: pointer;"></div>
+          <div class="box-image-slide" style="background-image: url(bar7-6.jpg); width: 165px;cursor: pointer;"></div>
+
+        </div>
+      </div>
+      <div class="box21  big-slide-Box">
+        <div class="box-content1"> 
+          <h2>Những sản phẩm được đánh giá cao</h2>
+          <div class="box3-image-slide" style="background-image: url(bar8-1.jpg);cursor: pointer;"></div>
+          <div class="box3-image-slide" style="background-image: url(bar8-2.jpg);cursor: pointer;"></div>
+          <div class="box3-image-slide" style="background-image: url(bar8-3.jpg); width: 160px;cursor: pointer;"></div>
+          <div class="box3-image-slide" style="background-image: url(bar8-4.jpg); width: 160px;cursor: pointer;"></div>
+          <div class="box3-image-slide" style="background-image: url(bar8-5.jpg);width: 160px; cursor: pointer;"></div>
+          <div class="box3-image-slide" style="background-image: url(bar8-6.jpg); width: 160px;cursor: pointer;"></div>
+          <div class="box3-image-slide" style="background-image: url(bar8-7.jpg); width: 160px;cursor: pointer;"></div>
+          <div class="tag">
+            <div class="tag1">
+              <p style="color: #007185;"><a href="">The Big Cheese (The Food Group)</a></p>
+              <p style="font-size: 11px">Jory John</p>
+              <p><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i></p>
+              <p style="font-size: 11px; color: #565959;">Hardcover</p>
+              <p style="font-size: 13px; color: red;">#1 Best Seller</p>
+              <p style="font-size: 13px;">in Children's Self-Esteem Books</p>
+              <p style="color: red;">15% off Deal</p>
+              <p>$16.90</p>
+              <p style="font-size: 13px;">List: <s>$19.99</s></p>
+              <p style="font-size: 13px;">$30.98 shipping</p>
+            </div>
+            <div class="tag2">
+              <p style="color: #007185;"><a href="">PlayStation 5 Console (PS5)</a></p>
+              <p style="font-size: 11px">PlayStation</p>
+              <p><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i></p>
+              <p style="font-size: 11px; color: #565959;">PlayStation 5</p>
+              <p style="font-size: 13px; color: red;">#1 Best Seller</p>
+              <p style="font-size: 13px;">in PlayStation 5 Console</p>
+              <p style="color: red;">35% off Deal</p>
+              <p>$89.90</p>
+              <p style="font-size: 13px;">List: <s>$53.99</s></p>
+              <p style="font-size: 13px;">$80.98 shipping</p>
+            </div>
+            <div class="tag3">
+              <p style="color: #007185;"><a href="">PlayStation DualSens Wireless</a></p>
+              <p style="font-size: 11px">JPlayStation</p>
+              <p><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i></p>
+              <p style="font-size: 11px; color: #565959;">PlayStation</p>
+              <p style="font-size: 13px; color: red;">#1 Best Seller</p>
+              <p style="font-size: 13px;">in PlayStation 5 Console</p>
+              <p style="color: red;">65% off Deal</p>
+              <p>$145.90</p>
+              <p style="font-size: 13px;">List: <s>$51.99</s></p>
+              <p style="font-size: 13px;">$40.98 shipping</p>
+            </div>
+            <div class="tag4">
+              <p style="color: #007185;"><a href="">Kids Markers For School (256)</a></p>
+              <p style="font-size: 11px">SchoolOns</p>
+              <p><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i></p>
+              <p style="font-size: 11px; color: #565959;">Slasd</p>
+              <p style="font-size: 13px; color: red;">#1 Best Seller</p>
+              <p style="font-size: 13px;">in School vice</p>
+              <p style="color: red;">55% off Deal</p>
+              <p>$29.90</p>
+              <p style="font-size: 13px;">List: <s>$13.99</s></p>
+              <p style="font-size: 13px;">$1.98 shipping</p>
+            </div>
+            <div class="tag5">
+              <p style="color: #007185;"><a href="">PlayStation DualSens WireRequire to play</a></p>
+              <p style="font-size: 11px">PlayStation</p>
+              <p><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i></p>
+              <p style="font-size: 11px; color: #565959;">PlayStation</p>
+              <p style="font-size: 13px; color: red;">#1 Best Seller</p>
+              <p style="font-size: 13px;">in PlayStation 5 wireless</p>
+              <p style="color: red;">12% off Deal</p>
+              <p>$515.90</p>
+              <p style="font-size: 13px;">List: <s>$151.99</s></p>
+              <p style="font-size: 13px;">$402.98 shipping</p>
+            </div>
+            <div class="tag6">
+              <p style="color: #007185;"><a href="">PlayStation DualSens WireRequire Nova Pink</a></p>
+              <p style="font-size: 11px">PlayStation</p>
+              <p><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i></p>
+              <p style="font-size: 11px; color: #565959;">PlayStation</p>
+              <p style="font-size: 13px; color: red;">#1 Best Seller</p>
+              <p style="font-size: 13px;">in PlayStation 5 wireless</p>
+              <p style="color: red;">62% off Deal</p>
+              <p>$315.90</p>
+              <p style="font-size: 13px;">List: <s>$2091.99</s></p>
+              <p style="font-size: 13px;">$102.98 shipping</p>
+            </div>
+            <div class="tag7">
+              <p style="color: #007185;"><a href="">Sony Conole Station Delesea</a></p>
+              <p style="font-size: 11px">Sony Console</p>
+              <p><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i><i class="fa-solid fa-star fa-2xs"></i></p>
+              <p style="font-size: 11px; color: #565959;">Sony</p>
+              <p style="font-size: 13px; color: red;">#1 Best Seller</p>
+              <p style="font-size: 13px;">in Sony Console</p>
+              <p style="color: red;">22% off Deal</p>
+              <p>$512.90</p>
+              <p style="font-size: 13px;">List: <s>$519.99</s></p>
+              <p style="font-size: 13px;">$12.98 shipping</p>
+            </div>
+        </div>
+        <div class="box-content2"> 
+          <p>See personalized recommendations</p>
+          <button style="background-color: orange; padding-bottom: 10px; padding-left: 93px; padding-right: 93px; border-radius: 4px; cursor: pointer;" onclick="redirectToSignIn()" ><span style="font-size: 14px; font-weight: 700;">Đăng nhập</span></button>
+          <div class="three">
+            <p>New customer?</p>
+            <p class="link" style="color: #0066c0;"><a href="sign up.html">Đăng kí</a></p>
+          </div>
+        </div>
+      </div >
+    </div>
+    
+
+    <footer>
+      <a href="">
+      <div class="foot-panel1" style="cursor: pointer;">
+        Back to top
+      </div>
+    </a>
+      <div class="foot-panel2">
+        <ul >
+          <p style="color: white; font-weight: 1000;">Get to Know Us</p>
+          <p>Careers</p>
+          <p>Blog</p>
+          <p>About Amazon</p>
+          <p>Investor Relations</p>
+          <p>Amazon Devices</p>
+          <p>Amazon Science</p>
+        </ul>
+        <ul>
+          <p style="color: white; font-weight: 1000;">Make Money with Us</p>
+          <p>Sell products on Amazon</p>
+          <p>Sell on Amazon Business</p>
+          <p>Sell apps on Amazon</p>
+          <p>Become an Affiliate</p>
+          <p>Self-Publish with Us</p>
+          <p>Host an Amazon Hub</p>
+          <p>›See More Make Money with Us</p>
+        </ul>       
+        <ul>
+          <p style="color: white; font-weight: 1000;">Amazon Payment Products</p>
+          <p>Amazon Business Card</p>
+          <p>Shop with Points</p>
+          <p>Reload Your Balance</p>
+          <p>Amazon Currency Converter</p>
+        </ul> 	
+        <ul>
+          <p style="color: white; font-weight: 1000;">Amazon and COVID-19</p>
+          <p>Let Us Help You</p>
+          <p>Your Account</p>
+          <p>Your Orders</p>
+          <p>Shipping Rates & Policies</p>
+          <p>Amazon Prime</p>
+          <p>Returns & Replacements</p>
+          <p>Manage Your Content and Devices</p>
+          <p>Amazon Assistant</p>
+          <p>Help</p>
+        </ul>  
+      </div>
+      <div class="foot-panel3">
+        <div class="logo2"></div>
+      </div>
+
+      <div class="foot-panel4">
+        <div class="pages">
+          <a>Condition of Use</a>
+          <a>Privacy Notice</a>
+          <a>Your Ads Privacy Choices</a>
+        </div>    
+        <div class="copyright">© 1996-2023, Amazon.com, Inc. or its affiliates</div>
+      </div>
+    </footer>
+  </body>
+</html>
